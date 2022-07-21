@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Required meta tags -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Page</title>
+    <link rel="shortcut icon" type="image/png" href="ImagesD/CELEC_LOGO.png">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="icon" href="Images/logos/celec_blanc.png" type="image/x-icon">
+    <script src="https://kit.fontawesome.com/27e5e9f5bc.js" ></script> 
+
+</head>
+<body>
+    <!--nav bar -->
+    <header>
+        <nav >
+            <input type="checkbox" id ="nav-toggle">
+            <div class="logo" data-aos="fade-down" data-aos-duration="1900"> <a  href="index.html#slider"> <img src="Images/logos/celec_blanc.png" style="width : 50px; height : 60px;" alt="Logo CELEC"> </a> </div>
+            <ul class="linkes" >
+              <li data-aos="fade-down" data-aos-duration="1900"> <a href="index.html#video">A propos</a></li>
+              <li data-aos="fade-down" data-aos-duration="1900"> <a href="index.html#activite">Activités</a></li>
+              <li data-aos="fade-down" data-aos-duration="1900"> <a href="index.html#comp">Membre</a></li>
+              <li data-aos="fade-down" data-aos-duration="1900"> <a href="index.html#inscrire">Inscription</a></li>
+              <li data-aos="fade-down" data-aos-duration="1900"> <a href="#">Gallerie</a></li>
+              <li data-aos="fade-down" data-aos-duration="1900"> <a href="eventssa.html">Evénement</a></li>
+             
+              <div class="dropdown">
+                <button class="dropbtn" data-aos="fade-down" data-aos-duration="1900">Formations <i class="fa fa-sort-desc" aria-hidden="true"></i></button>
+                <div class="dropdown-content">
+                  <a href="cours.html">Enligne</a>
+                  <a href="formation.html">Présentiel</a>
+                </div>
+              </div>
+              <li data-aos="fade-down" data-aos-duration="1900"> <a href="#contact">contact</a></li>
+            </ul>
+            <label for="nav-toggle" class="icon-barger">
+              <div class="line"></div>
+              <div class="line"></div>
+              <div class="line"></div>
+            
+            </label>
+          </nav>
+    </header>
+    <!-- js nav bar-->
+    <script>
+       const toggleButton = document.getElementsByClassName('toggle-button')[0]
+       const navbarLinks = document.getElementsByClassName('navbar-links')[0]
+
+       toggleButton.addEventListener('click', () => {
+       navbarLinks.classList.toggle('active')
+       })
+    </script>
+    <!-- *pre-inscription form* -->
+    <div class="hero-text">
+        <h1>Pré-Inscription</h1>
+        <p>Les inscriptions pour adhérer à notre club CELEC sont enfin ouvertes pour 
+            l’ensemble des étudiants de l’USTHB, qui visent à sculpter et à améliorer leurs 
+            compétences dans les divers domaines ( programmation, design.....) et plus 
+            spécialement l’ELECTRONIQUE, à travers les activités planifiées cette année 
+            ( plusieurs surprises vous attendent ).
+            Veuillez s'il vous plait remplir soigneusement ce formulaire.</p>
+    </div>
+    <!-- form -->
+       <div class="form">
+        <form action="results.html" method="GET">
+
+            <label for="name">Nom:
+                <input class="style" type="text" name="name" id="name" placeholder="Votre Nom..." required>
+            </label>
+
+            <label for="family_name">Prénom:
+                <input class="style" type="text" name="family_name" id="family_name" placeholder="Votre Prénom..." required>
+            </label>
+
+            <label for="birthdate">Date de naissance:
+                <input class="style" type="date" name="birthdate" id="birthdate" max="2005-01-01" required>
+            </label>
+
+            <label for="email">E-mail Adress:
+                <input class="style" type="email" name="email" id="email" placeholder="Votre adresse mail..." required>
+            </label>
+
+            <label for="phone">Numéro de telephone:
+                <input class="style" type="number" name="phone" id="phone" placeholder="Votre numéro..." required>
+            </label>
+
+            <label for="UNI">Votre Université:
+                <input class="style" type="text" name="Université" id="UNI" placeholder="Université..." required>
+            </label>
+
+            <div class="level">
+                <p>Niveau d'Etude:</p>
+
+                <div class="option">
+                    <input type="radio" id="L1" name="Niveau d'Etude" value="L1">
+                    <label for="L1">L1</label>
+                </div>
+
+                <div class="option">
+                    <input type="radio" id="L2" name="Niveau d'Etude" value="L2">
+                    <label for="L2">L2</label>
+                </div>
+
+                <div class="option">
+                    <input type="radio" id="L3" name="Niveau d'Etude" value="L3">
+                    <label for="L3">L3</label>
+                </div>
+
+                <div class="option">
+                    <input type="radio" id="M1" name="Niveau d'Etude" value="M1">
+                    <label for="M1">M1</label>
+                </div>
+
+                <div class="option">
+                    <input type="radio" id="M2" name="Niveau d'Etude" value="M2">
+                    <label for="M2">M2</label>
+                </div>
+            </div>
+
+            <label for="domain">Spécialité:
+                <input class="style" type="text" name="domain" id="domain" placeholder="Votre spécialité..." required>
+            </label>
+
+            <label for="motivation">Motivation
+                <textarea class="style" name="mativation" id="motivation" required></textarea>
+            </label>
+
+            <div class="skills">
+                <p>Compétences:</p>
+
+                <label class="checkbox" for="Développement-Web">
+                    <input class="checkbox__input" type="checkbox" id="Développement-Web" name="skills" value="web-dev">
+                    <div class="checkbox__box"></div>
+                    Développement Web
+                </label>
+                <br>
+                <label class="checkbox" for="Design">
+                    <input class="checkbox__input" type="checkbox" id="Design" name="skills" value="design">
+                    <div class="checkbox__box"></div>
+                    Design
+                </label>
+                <br>
+                <label class="checkbox" for="C++">
+                    <input class="checkbox__input" type="checkbox" id="C++" name="skills" value="C++">
+                    <div class="checkbox__box"></div>
+                    C++
+                </label>
+                <br>
+                <label class="checkbox" for="Python">
+                    <input class="checkbox__input" type="checkbox" id="Python" name="skills" value="python">
+                    <div class="checkbox__box"></div>
+                    Python
+                </label>
+                <br>
+                <label class="checkbox" for="Arduino">
+                    <input class="checkbox__input" type="checkbox" id="Arduino" name="skills" value="arduino">
+                    <div class="checkbox__box"></div>
+                    Arduino
+                </label>
+                <br>
+                <label class="checkbox" for="MikroC">
+                    <input class="checkbox__input" type="checkbox" id="MikroC" name="skills" value="MikroC">
+                    <div class="checkbox__box"></div>
+                    MikroC
+                </label>
+                <br>
+                <label class="checkbox" for="Raspberry">
+                    <input class="checkbox__input" type="checkbox" id="Raspberry" name="skills" value="raspberry">
+                    <div class="checkbox__box"></div>
+                    Raspberry
+                </label>
+                <br>
+                <label class="checkbox" for="Matllab">
+                    <input class="checkbox__input" type="checkbox" id="Matllab" name="skills" value="Matllab">
+                    <div class="checkbox__box"></div>
+                    Matllab
+                </label>
+                <br>
+                <label class="checkbox" for="HTML">
+                    <input class="checkbox__input" type="checkbox" id="HTML" name="skills" value="HTML">
+                    <div class="checkbox__box"></div>
+                    HTML
+                </label>
+                <br>
+                <label class="checkbox" for="CSS">
+                    <input class="checkbox__input" type="checkbox" id="CSS" name="skills" value="CSS">
+                    <div class="checkbox__box"></div>
+                    CSS
+                </label>
+                <br>
+                <label class="checkbox" for="Proteus">
+                    <input class="checkbox__input" type="checkbox" id="Proteus" name="skills" value="proteus">
+                    <div class="checkbox__box"></div>
+                    Proteus
+                </label>
+                <br>
+                <label class="checkbox" for="Sprint-Layout">
+                    <input class="checkbox__input" type="checkbox" id="Sprint-Layout" name="skills" value="Sprint-Layout">
+                    <div class="checkbox__box"></div>
+                    Sprint Layout
+                </label>
+                <br>
+                <label class="checkbox" for="Eagle">
+                    <input class="checkbox__input" type="checkbox" id="Eagle" name="skills" value="eagle">
+                    <div class="checkbox__box"></div>
+                    Eagle
+                </label>
+                <br>
+                <label class="checkbox" for="MPLAB">
+                    <input class="checkbox__input" type="checkbox" id="MPLAB" name="skills" value="MPLAB">
+                    <div class="checkbox__box"></div>
+                    MPLAB
+                </label>
+
+                <div class="other">
+                    <input class="style" type="text" name="other" placeholder="Autre...">
+                </div>
+
+            </div>
+
+            <label for="celec">Comment avez-vous connu le club CELEC?
+                <input class="style" type="text" name="Comment avez-vous connu le club CELEC?" id="celec" placeholder="Votre réponse..." required>
+            </label>
+
+            <label for="linkedIn">LinkedIn Profile: (URL)
+                <input class="style" type="text" name="linkediIn" id="linkedIn" placeholder="Votre réponse...">
+            </label>
+
+            <div class="CV">
+                <p>Votre CV</p>
+
+                <input type="file" id="real-file" hidden>
+                <button type="button" id="custom-button">Choisir un document</button>
+                <span id="custom-text">Aucun document sélectionné.</span>
+            </div>
+
+            <button class="B1" type="submit">Submit</button>
+            <button class="B2" type="reset">Reset</button>
+        </form>
+    </div>
+    <!-- footer -->
+    <footer>
+        <div class="p1">
+            <p>N.B: <br>
+                L'inscription ne sera confirmée qu'après avoir remis un dossier, 
+                au local du club <br>( Labo 13, Faculté d'Electronique et d'Informatique ).</p>
+        </div>
+
+        <div class="p2">
+            <p>CELEC 2020</p>
+        </div>
+    </footer>
+    <!-- js -->
+    <script>
+        const realFileBtn = document.getElementById("real-file");
+        const customBtn = document.getElementById("custom-button");
+        const customTxt = document.getElementById("custom-text");
+
+        customBtn.addEventListener("click", function() {
+            realFileBtn.click();
+        });
+
+        realFileBtn.addEventListener("change", function() {
+            if (realFileBtn.value) {
+                customTxt.innerHTML = realFileBtn.value.match(/[\/\\]([\w\d\s\.\-\(\)]+)$/)[1];
+            } else {
+                customTxt.innerHTML = "No file chosen, yet.";
+            }
+        });
+    </script>
+    
+</body>
+</html>

@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Formation</title>
+	<meta charset="utf-8">
+	<link rel="icon" href="Images/logos/celec_blanc.png" type="image/x-icon">
+  <link rel="stylesheet" type="text/css" href="formation.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <style>
+    .commingsoon{
+    
+      background-color: #231c3d;
+      width: 100%;
+      height: 100vh;
+      position: fixed;
+      z-index: 999999;
+      top: 0;
+      left: 0;
+      margin: 0;
+      padding: 0;
+    }
+    .circle{
+      height: 400px;
+      width: 400px;
+      border-radius: 50%;
+      background: linear-gradient(#535475 0%,#231c3d 30%);
+      position: absolute;
+      top: 20%;
+      left: 35%;
+    }
+    .circle:before,.circle:after{
+      content: '';
+      height: 400px;
+      width: 400px;
+      background: linear-gradient(#dbd1ff 0%,#9b84ff 5%,#2D2133 25%);
+      border-radius: 50%;
+      position: absolute;
+      top: 42%;
+      left: 50%;
+      transform: translate(-50%,-50%);
+      -webkit-filter: blur(7px);
+      z-index: -1;
+    }
+    .circle:after{
+      width: 415px;
+      top: 35%;
+      -webkit-filter: blur(40px);
+      opacity: .3;
+    }
+    .msg{
+      font-family: sans-serif;
+      font-size: 20px;
+      color: white;
+      text-transform: uppercase;
+      font-weight: bold;
+      letter-spacing: 17px;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%,-50%);
+    }
+    .notifymsg{
+      font-family: sans-serif;
+      font-size: 12px;
+      color: white;
+      letter-spacing: 2px;
+      position: absolute;
+      bottom: 17%;
+      left: 50%;
+      transform: translate(-50%,-50%);
+      text-transform: uppercase;
+    }
+    .field{
+      position: absolute;
+      bottom: 27%;
+      left: 54%;
+      transform: translateX(-50%);
+    }
+    .field input{
+      height: 39px;
+      width: 350px;
+      background-color:#110e1f;
+      outline: none;
+      color: white;
+      border: none;
+      border-radius: 35px;
+      font-family: sans-serif;
+      font-size: 10px;
+      font-weight: bold;
+      letter-spacing: 1px;
+      padding-left: 15px;
+    }
+    .field button{
+      height: 42px;
+      width: 120px;
+      background-color: #403e61;
+      font-family: sans-serif;
+      font-size: 11px;
+      color: white;
+      letter-spacing: 1px;
+      border: none;
+      outline: none;
+      border-radius: 35px;
+      position: relative;
+      left: -120px;
+      z-index: 999;
+    }
+    
+    
+    
+    </style>
+</head>
+<body >
+
+<!--comming soon-->
+<div class="row commingsoon">
+  <span class="circle"></span>
+  <span class="msg">Bientôt disponible</span>
+  <span class="notifymsg">être Averti Quand Il Est Prêt</span>
+  <span class="field">
+  <input type="email" placeholder="Entrez Votre Email" style="color: white; padding-top: 2px;">
+  <button>Prévenez-moi</button>
+  </span>
+</div>
+
+  <div class="container-fluid banner">
+    <div class="row">
+    <div class="col-md-12">
+      <!--navbar-->
+      <nav >
+        <input type="checkbox" id ="nav-toggle">
+        <div class="logo" data-aos="fade-down" data-aos-duration="1900"> <a  href="index.html#slider"> <img src="Images/logos/celec_blanc.png" style="width : 50px; height : 60px;" alt="Logo CELEC"> </a> </div>
+        <ul class="linkes" >
+          <li data-aos="fade-down" data-aos-duration="1900"> <a href="index.html#video">A propos</a></li>
+          <li data-aos="fade-down" data-aos-duration="1900"> <a href="index.html#activite">Activités</a></li>
+          <li data-aos="fade-down" data-aos-duration="1900"> <a href="index.html#comp">Membre</a></li>
+          <li data-aos="fade-down" data-aos-duration="1900"> <a href="index.html#inscrire">Inscription</a></li>
+          <li data-aos="fade-down" data-aos-duration="1900"> <a href="#">Gallerie</a></li>
+          <li data-aos="fade-down" data-aos-duration="1900"> <a href="eventssa.html">Evénement</a></li>
+         
+          <div class="dropdown">
+            <button class="dropbtn" data-aos="fade-down" data-aos-duration="1900">Formations <i class="fa fa-sort-desc" aria-hidden="true"></i></button>
+            <div class="dropdown-content">
+              <a href="cours.html">Enligne</a>
+              <a href="#">Présentiel</a>
+            </div>
+          </div>
+          <li data-aos="fade-down" data-aos-duration="1900"> <a href="#contact">contact</a></li>
+        </ul>
+        <label for="nav-toggle" class="icon-barger">
+          <div class="line"></div>
+          <div class="line"></div>
+          <div class="line"></div>
+        
+        </label>
+      </nav>
+
+<!--forms-->
+<div class="login1 container-fluid">
+<div class="row">
+<h1>Formations</h1>
+
+<div class="text_box"> 
+ 	<input type="text" name="" placeholder="Nom et Prénom">
+ </div>
+ <div class="text_box"> 
+         <input type="text" name="" placeholder="Date de naissance">
+     </div>
+
+<div class="text_box">
+ <input type="text" name="" placeholder="E-mail">
+</div>
+
+
+<div class="text_box">
+  <input type="text" placeholder="Université">
+ </div>
+ <div class="text_box">
+  <input type="text" placeholder="Spécialité">
+ </div>
+ <div class="text_box">
+  <input type="text" placeholder="Motivation">
+ </div>
+ <div class="envo1">
+<input type="file" name="file" id="file" class="inputfile"/>
+ <label for="file">Votre CV</label>
+</div>
+
+
+</div></div>
+
+<div class="login2 container">
+<div class="row">
+  
+  <div class="text_box"> 
+     <input type="text" name="" placeholder="nivau détude">
+   </div>
+   <div class="text_box"> 
+           <input type="te" name="" placeholder="Compétance">
+       </div>
+  
+  <div class="text_box">
+    <select name="Type-de-stage" id="Type-de-stage" class="select">
+      <option disabled selected>Type de stage</option>
+      <option value="fin_d'études">Fin d'études</option>
+      <option value="pratique">Pratique</option>
+      <option value="expérience">Expérience</option>
+  </select>
+  </div>
+  
+  
+  <div class="text_box">
+    <input type="number" placeholder="Duré du stage(mois)">
+   </div>
+   <div class="text_box">
+    <input type="text" placeholder="Date du stage">
+   </div>.
+   
+   <div class="bouton envo2">
+    <input type="button" value="envoyé">
+   </div>
+  </div>
+  </div>
+  
+  </div>
+  </div>
+   </div>
+  
+
+
+
+
+
+   
+</body>
+
+
+
+
+
+
+</html>
